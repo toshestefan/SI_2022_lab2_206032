@@ -9,5 +9,6 @@
 # Според Every statement
 ![image](https://user-images.githubusercontent.com/100384226/167505174-8424c2c9-c30c-475d-9147-0ea0139d9c91.png)
 # Според Every branch
-![image](https://user-images.githubusercontent.com/100384226/167505655-68ce4868-b5f2-4897-b16f-c8ff13aa539e.png)
+![image](https://user-images.githubusercontent.com/100384226/167648567-dfb200b6-2e9f-463f-bb2b-232e633c149e.png)
+
 
