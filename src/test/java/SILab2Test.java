@@ -13,7 +13,7 @@ public class SILab2Test {
     }
 
     @Test
-    public void everyStatementAndBranchTest() {
+    public void everyStatementTest() {
         IllegalArgumentException ex;
 
         ex = assertThrows(IllegalArgumentException.class, ()->SILab2.function(Collections.emptyList()));
@@ -26,4 +26,22 @@ public class SILab2Test {
         assertEquals(list,SILab2.function(createList("0","#","0","#","0","#","0","#","0")));
 
     }
+    @Test
+    public void everyBranchTest() {
+        IllegalArgumentException ex;
+
+        ex = assertThrows(IllegalArgumentException.class, ()->SILab2.function(Collections.emptyList()));
+        assertTrue(ex.getMessage().contains("List length should be greater than 0"));
+
+        ex = assertThrows(IllegalArgumentException.class, ()->SILab2.function(createList("0","#","0")));
+        assertTrue(ex.getMessage().contains("List length should be a perfect square"));
+
+        List<String> list=createList("2","#","2","#","4","#","2","#","2");
+        assertEquals(list,SILab2.function(createList("0","#","0","#","0","#","0","#","0")));
+
+        list=createList("1","1","1","#","#","#","2","#","2");
+        assertEquals(list,SILab2.function(createList("0","0","0","#","#","#","0","#","0")));
+
+    }
+
 }
